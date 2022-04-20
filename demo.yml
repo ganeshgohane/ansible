@@ -1,0 +1,12 @@
+ ---
+ name: ganesh
+ address: nagpur
+ education: bsc(cs)
+ ---
+ age: 24
+ dob: 20:03:1997
+ course: devops
+ ---
+ fees: 20000
+ date of admission: 20:08:2020
+ ---
