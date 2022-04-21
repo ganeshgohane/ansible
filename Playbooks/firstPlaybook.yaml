@@ -4,4 +4,4 @@
  tasks:
     - name: ping ths hosts 
       ping:
----
+...
