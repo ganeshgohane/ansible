@@ -1,8 +1,8 @@
 - name: playbook for debug
   hosts: all
-  vars_files:
-   - ./varFile
-  vars: 
+ vars_files:
+ - ./varfile
+ vars: 
    URL: "www.ganesh.com"
   tasks:
     - name: print hello world
