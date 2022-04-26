@@ -4,7 +4,7 @@ tasks:
   -name: Condition example
   debuge:
    msg: "this is ec2-user"
-   when: ansible_distribution == "ec2-user"
+   when: ansible_distribution == "Amazon"
 
    -name: Condition example
    debuge: 
