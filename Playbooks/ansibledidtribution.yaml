@@ -1,12 +1,7 @@
--name: this is ansible distribution"
+-name: Gathering Facts Playbook"
 hosts: all
 tasks:
-  -name: Condition example
+  -name: Print OS
   debuge:
-   msg: "this is ec2-user"
-   when: ansible_distribution == "ec2-user"
-
-   -name: Condition example
-   debuge: 
-    msg: "this is centos"
-    when: ansible_distribution == "centoS"
+   msg: "This is {{ansible_distribution}}"
+ 
