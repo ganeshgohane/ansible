@@ -1,0 +1,11 @@
+- name: playbook for debug
+  hosts: all
+  tasks:
+    - name: print OS Name
+      debug:
+       msg: "THIS IS {{ansible_distribution}}"
+      register: Print_out
+
+    - name: Print The Register Vaariable
+      debug: 
+       msg: " Value of The Register var is {{Print_out_msg}}"
