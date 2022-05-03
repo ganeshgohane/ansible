@@ -1,7 +1,0 @@
--name: Gathering Facts Playbook"
-hosts: all
-tasks:
-  -name: Print OS
-  debuge:
-   msg: "This is {{ansible_distribution}}"
- 
