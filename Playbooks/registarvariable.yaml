@@ -1,11 +1,11 @@
-- name: playbook for debug
+- name: Gathering Facts Playbook
   hosts: all
   tasks:
-    - name: print OS Name
+    - name: print OS name
       debug:
-       msg: "THIS IS {{ansible_distribution}}"
-      register: 'Print_out'
-
-    - name: Print The Register Variable
-      debug: 
-       msg: " Value of The Register var is {{Print_out_msg}}"
+        msg: 'THIS IS {{ ansible_distribution }}'
+      register: print_out
+      
+    - name: print the Register variable
+      debug:
+        msg: 'Value of the register var is {{ print_out.msg }}'
