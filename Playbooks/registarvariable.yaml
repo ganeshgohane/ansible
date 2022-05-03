@@ -4,7 +4,7 @@
     - name: print OS Name
       debug:
        msg: "THIS IS {{ansible_distribution}}"
-      register: Print_out
+      register: 'Print_out'
 
     - name: Print The Register Variable
       debug: 
