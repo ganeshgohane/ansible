@@ -8,4 +8,4 @@
 
     - name: Print The Register Vaariable
       debug: 
-       msg: " Value of The Register var is {{Print_out_msg}}"
+       msg: " Value of The Register variable is {{Print_out_msg}}"
