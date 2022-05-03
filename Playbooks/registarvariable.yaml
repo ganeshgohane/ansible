@@ -6,6 +6,6 @@
        msg: "THIS IS {{ansible_distribution}}"
       register: Print_out
 
-    - name: Print The Register Vaariable
+    - name: Print The Register Variable
       debug: 
-       msg: " Value of The Register variable is {{Print_out_msg}}"
+       msg: " Value of The Register var is {{Print_out_msg}}"
