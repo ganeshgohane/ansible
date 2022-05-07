@@ -14,7 +14,7 @@
     dest: /opt/
 
 - name: Move the src file to dest
-  command: mv /path/to/src /path/to/dest
+  command: mv ./student(1).war /opt/apache-tomcat9.tar.gz/webapps
   args:
     removes: ./student(1).war
     creates: /opt/apache-tomcat9.tar.gz/webapps
