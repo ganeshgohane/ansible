@@ -14,4 +14,8 @@
     src: ./index.html
     dest: /var/www/html/index.html
 
+- name: Deploy Website content
+  copy:
+    src: ./index_files
+    dest: /var/www/html/index.html
 
