@@ -1,0 +1,20 @@
+- name: Install Java
+  yum:
+    state: latest
+    name: openjdk-java
+
+- name: Download tomcat 8
+  get_url:
+    url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat9.tar.gz
+    dest: /opt/
+
+- name: Extract tomcat to /opt
+  unarchive:
+    src: /opt/apache-tomcat9.tar.gz
+    dest: /opt/
+
+- name: Move the src file to dest
+  command: mv /path/to/src /path/to/dest
+  args:
+    removes: ./student(1).war
+    creates: /opt/apache-tomcat9.tar.gz/webapps
