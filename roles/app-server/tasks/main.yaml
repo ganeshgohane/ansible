@@ -5,16 +5,14 @@
 
 - name: Download tomcat 8
   get_url:
-    url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat9.tar.gz
+    url: "{{ TOMCAT_URL }}"
     dest: /opt/
 
 - name: Extract tomcat to /opt
   unarchive:
-    src: /opt/apache-tomcat9.tar.gz
+    src: /opt/{{ TOMCAT_ZIP }}
     dest: /opt/
+    remote_src: true
 
-- name: Move the src file to dest
-  command: mv ./student(1).war /opt/apache-tomcat9.tar.gz/webapps
-  args:
-    removes: ./student(1).war
-    creates: /opt/apache-tomcat9.tar.gz/webapps
+- name: start service
+  shell: /opt/{{TOMCAT_NAME}}/bin/catalina.sh start
