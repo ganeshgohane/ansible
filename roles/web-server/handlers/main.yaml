@@ -1,5 +1,0 @@
-- name: start httpd daemon
-  service:
-    state: started
-    name: httpd
-    enabled: true

@@ -3,11 +3,11 @@
     state: latest  
     name: httpd
 
-#- name: start httpd daemon
- # service:
-  #  state: started
-   # name: httpd
-    #enabled: true
+- name: start httpd daemon
+  service:
+    state: started
+    name: httpd
+    enabled: true
 
 - name: Deploy Website
   copy:
