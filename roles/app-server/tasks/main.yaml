@@ -27,8 +27,7 @@
     src: ./context.xml
     dest: /opt/{{TOMCAT_DIR}}/conf/context.xml
   notify: 
-    - restart tomcat
-
+     - restart tomcat
 
 - name: Store my-sql connector in lib
   get_url:
